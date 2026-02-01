@@ -1,0 +1,10 @@
+import argparse
+p=argparse.ArgumentParser()
+p.add_argument("--db"), p.add_argument("--game")
+p.add_argument("--csv-top"), p.add_argument("--csv-all")
+p.add_argument("--html"), p.add_argument("--title")
+p.add_argument("--shortlist", type=int, default=5)
+p.add_argument("--shortlist-exclude-recent-draws", type=int, default=12)
+p.add_argument("--blacklist")
+args=p.parse_args()
+print(f"[OK ] post_scoring_generic (stub) juego={args.game}")

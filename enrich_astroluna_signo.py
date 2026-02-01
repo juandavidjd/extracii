@@ -1,0 +1,11 @@
+import argparse
+p=argparse.ArgumentParser()
+p.add_argument("--db"), p.add_argument("--csv-top"), p.add_argument("--csv-all")
+p.add_argument("--html"), p.add_argument("--title")
+p.add_argument("--shortlist", type=int, default=5)
+p.add_argument("--shortlist-exclude-recent-draws", type=int, default=12)
+p.add_argument("--blacklist"), p.add_argument("--w-alpha", type=float, default=0.5)
+p.add_argument("--w-beta", type=float, default=0.3), p.add_argument("--w-gamma", type=float, default=0.2)
+p.add_argument("--lookback-days", type=int, default=365)
+args=p.parse_args()
+print("[OK ] enrich_astroluna_signo (stub)")
